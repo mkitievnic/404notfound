@@ -1,0 +1,141 @@
+*,*::after,*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width:90vw;
+    height: 100vh;
+}
+header{
+    height: 100px;
+    
+}
+
+h1{
+    font-family: 'Inconsolata';
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color:#333;
+    position:absolute;
+    top:40px;
+    left:77px;
+    width:133px;
+    height:25px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.content .imgBx{
+    min-width: 300px;
+    max-width:600px;
+}
+
+.content .imgBx img{
+    width: 100%;
+}
+
+.card-title h2{
+    font-family: monospace;
+    font-size:50px;
+    line-height: 94px;
+   
+}
+.content .imgBx,
+.content .card-title{
+    padding:20px;
+}
+.card-title p{
+    margin:20px;
+    font-size:25px;
+    line-height: 36px;
+    font-family: monospace;
+    width:381px;
+    height: 108px;
+}
+
+.card-title .btn{
+    margin-top:50px;
+    padding: 10px;
+    width: 180px;
+    height: 68px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-title .btn a{
+    text-decoration: none;
+    color:#FFF;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+    color:#bdbdbd;
+    padding:30px;
+}
+
+@media (max-width:375px){
+    body {
+        height: 100vh;
+        width: 100vw;
+    }    
+    h1{
+        top: 20px;
+        left: 15px;
+        font-size:21px;
+    }
+    .content{
+       flex-direction: column;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+       align-items: center;
+       text-align: left;
+       height: 750px;
+    }
+    .content .imgBx {
+        min-width: 287px;
+    }
+
+    .card-title h2 {
+        padding: 0px;
+        font-size: 34px;
+        line-height: 50px;
+    }
+
+    .card-title p {
+        margin: 2px;
+        padding: 0px 6px;
+        width: 100%;
+        height: 112px;
+        font-size: 16px;
+        margin-top:45px;
+    }  
+
+    .card-title .btn {
+        padding: 10px;
+        width: 180px;
+        height: 49px;
+        margin-left: 9px;
+      
+    }
+    footer {
+       padding: 13px;
+    }
+}
